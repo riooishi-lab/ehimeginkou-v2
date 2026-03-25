@@ -153,7 +153,7 @@ function CompanyApp() {
           <p>このアカウントは管理者として登録されていません。</p>
           <p className="text-sm text-gray-400">{session.user.email}</p>
           <button
-            onClick={() => { void import('../../lib/supabase').then(m => m.supabase.auth.signOut()) }}
+            onClick={() => { void import('../lib/supabase').then(m => m.supabase.auth.signOut()) }}
             className="px-4 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors"
           >
             ログアウト
